@@ -1,75 +1,40 @@
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Getting Started
 
-### Prerequisites
+First, run the development server:
 
-* Python  >=3.7
-* torch == 1.5.1
-* nltk
-* transformers
-####  Running the code
-##### Generate boolean (Yes/No) Questions
-```
-*** I Grap some text from wiki ***
-how many questions you wanted to be generated?
-3
-
-```
-<details>
-<summary>Show Output</summary>
-
-```
-'Boolean Questions': ['Is the photoelectric effect the same as quantum '
-                       'mechanics?',
-                       'Is the theory of relativity the same as quantum '
-                       'mechanics?',
-                       'Was the theory of relativity the same as quantum '
-                       'mechanics?']
-
-```
-</details>
-  
-
-
-##### True or False Statements Questions
-
-```
-There is a lot of volcanic activity at divergent plate boundaries in the oceans. For example, many undersea volcanoes are found along the Mid-Atlantic Ridge. This is a divergent plate boundary that runs north-south through the middle of the Atlantic Ocean. As tectonic plates pull away from each other at a divergent plate boundary, they create deep fissures, or cracks, in the crust. Molten rock, called magma, erupts through these cracks onto Earth’s surface. At the surface, the molten rock is called lava. It cools and hardens, forming rock. Divergent plate boundaries also occur in the continental crust. Volcanoes form at these boundaries, but less often than in ocean crust. That’s because continental crust is thicker than oceanic crust. This makes it more difficult for molten rock to push up through the crust. Many volcanoes form along convergent plate boundaries where one tectonic plate is pulled down beneath another at a subduction zone. The leading edge of the plate melts as it is pulled into the mantle, forming magma that erupts as volcanoes. When a line of volcanoes forms along a subduction zone, they make up a volcanic arc. The edges of the Pacific plate are long subduction zones lined with volcanoes. This is why the Pacific rim is called the “Pacific Ring of Fire.”
-
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-<details>
-<summary>Show Output</summary>
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```
-[
-    {
-        "sentence": "As tectonic plates pull away from each other at a divergent plate boundary, they create deep fissures, or cracks, in",
-        "false_sentences": [
-            "As tectonic plates pull away from each other at a divergent plate boundary, they create deep fissures, or cracks, in the bottom of our ocean.",
-            "As tectonic plates pull away from each other at a divergent plate boundary, they create deep fissures, or cracks, in the sediment and produce strong currents."
-        ]
-    },
-    {
-        "sentence": "Divergent plate boundaries also occur in",
-        "false_sentences": [
-            "Divergent plate boundaries also occur in many regions of the Americas, including Mexico.",
-            "Divergent plate boundaries also occur in the form of diverging water levels and ice loss.",
-            "Divergent plate boundaries also occur in the presence of two distinct microhabitat sites."
-        ]
-    },
-    {
-        "sentence": "Volcanoes form at these boundaries, but less often than in",
-        "false_sentences": []
-    },
-    {
-        "sentence": "Many volcanoes form along convergent plate boundaries where one tectonic plate is pulled down beneath another at",
-        "false_sentences": [
-            "Many volcanoes form along convergent plate boundaries where one tectonic plate is pulled down beneath another at a speed of about three miles per hour.",
-            "Many volcanoes form along convergent plate boundaries where one tectonic plate is pulled down beneath another at an angle which leads to higher rates of earthquakes.",
-            "Many volcanoes form along convergent plate boundaries where one tectonic plate is pulled down beneath another at the same time and, when they do strike different scales on a single day or in tandem with other parts of that T-day's system (Fig."
-        ]
-    }
-]
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-```
-</details>
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
